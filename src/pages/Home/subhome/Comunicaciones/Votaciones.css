@@ -1,0 +1,96 @@
+.votaciones-container {
+  padding: 2rem;
+  background-color: #fdfdfd;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.votaciones-container h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Tarjeta general */
+.votacion-card {
+  background-color: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.votacion-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Pregunta */
+.votacion-card h3 {
+  color: #003366;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+/* Botones de opción */
+.votacion-opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.votacion-boton {
+  background-color: #3A9AA5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.votacion-boton:hover {
+  background-color: #3a9aa5; /* tono más oscuro */
+  transform: scale(1.03);
+}
+
+.votacion-boton:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+}
+
+/* Resultados */
+.votacion-resultados {
+  background-color: #f1f1f1;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #003366;
+}
+
+.votacion-resultados p {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+/* Mensaje de carga o vacío */
+.votaciones-mensaje {
+  text-align: center;
+  color: #555;
+  background: #e8e8e8;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+}

@@ -1,0 +1,21 @@
+.panel-admin-usuarios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.admin-usuarios-screen{
+    padding: 10px;
+}
+.panel-residentes-dpto{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--color-verde);
+}
+.panel-residentes-residentes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

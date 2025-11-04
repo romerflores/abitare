@@ -1,0 +1,37 @@
+.ticket-header-options{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 10px;
+}
+.p-component{
+    padding: 5px 10px;
+    gap: 10px;
+}
+.p-button{
+    gap: 10px !important;
+    padding: 5px 10px !important;
+  }
+.ticket-header-prioridad{
+    border-radius: 10px;
+    padding: 5px 15px;
+    text-align: center;
+}
+@media screen and (width<=680px) {
+  .s_ticket-details-header{
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .s_ticket-details-header>h2{
+    text-align: center;
+  }
+  .ticket-header-options{
+    justify-content: center;
+  }
+  .p-button{
+    position: static;
+    gap: 10px !important;
+    padding: 5px 10px !important;
+  }
+}

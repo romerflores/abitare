@@ -1,0 +1,20 @@
+.form-campo-select{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.form-campo-select>label{
+    font-weight: bold;
+}
+.campo-select{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+}
+.campo-select:focus{
+    outline: 2px solid var(--bg-color-main);
+}
+.select-option{
+    font-size: 1.2em;
+}

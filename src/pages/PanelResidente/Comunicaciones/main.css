@@ -1,0 +1,17 @@
+.residente-nav-chat{
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 1em;
+    margin: 0 auto;
+}
+.residente-nav-chat-list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+.residente-chat-list-item>a{
+    text-decoration: none;
+    color: #000;
+}

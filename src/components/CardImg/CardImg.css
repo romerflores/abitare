@@ -1,0 +1,57 @@
+.c_CardImg
+{
+    border-radius: 10px;
+    margin: 10px;
+
+    width: 300px;
+    
+    min-height: 350px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.c_CardImg-img
+{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 50%;
+}
+
+.c_CardImg-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 10px;
+    width: 95%;
+    height: 20%;
+}
+
+.c_CardImg-tags
+{
+    width: 90%;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    align-items: start;
+}
+
+.c_aLogo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+

@@ -1,0 +1,57 @@
+.admin-registro-visitas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+.admin-registro-visitas>h1{
+    font-size: 2em;
+}
+.container-registro-visitas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.registro-visitas-activas{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-verde);
+    border-radius: 10px;
+}
+.registro-visitas-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    gap: 30px;
+    color: #fff;
+}
+.card-visita-qr{
+    width: 120px;
+    height: 120px;
+}
+.card-visita-qr>img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+/* .registro-visitas-inactivas{
+    flex: 1;
+    background-color: #ff0;
+    display: flex;
+    flex-direction: column;
+} */
+
+@media screen and (width<=900px) {
+    .registro-visitas-card{
+        align-items: end;
+        flex-direction: column-reverse;
+    }
+}

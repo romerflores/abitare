@@ -1,0 +1,218 @@
+.votaciones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px);
+  background-color: #F5F5DC; /* beige claro */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Título */
+.votaciones-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003366; /* azul oscuro */
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 3px solid #4FB3BF;
+  padding-bottom: 0.5rem;
+}
+
+/* Texto informativo */
+.votaciones-cargando,
+.votaciones-vacio {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  background: #E8E8E8;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Contenedor de tarjetas */
+.votaciones-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Tarjeta individual */
+.votacion-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 1.5rem 1.8rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #4FB3BF;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.votacion-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Pregunta */
+.votacion-pregunta {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+/* Botones de opciones */
+.votacion-opciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.votacion-boton {
+  background-color: #4FB3BF; /* celeste */
+  color: #FFFFFF;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.25s ease, transform 0.1s ease;
+}
+
+.votacion-boton:hover {
+  background-color: #3A9AA5;
+  transform: scale(1.03);
+}
+
+.votacion-boton-disabled {
+  background-color: #A9A9A9;
+  cursor: not-allowed;
+}
+
+/* Resultados */
+.votacion-resultados {
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  color: #003366;
+  background: #E8E8E8;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  border: 1px solid #dcdcdc;
+}
+
+.votacion-resultados p {
+  font-weight: 600;
+  color: #003366;
+}
+
+.votacion-resultados ul {
+  margin-top: 0.4rem;
+  margin-left: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Animación sutil */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.votacion-card {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.anuncio-card {
+  background-color: #ffffff; /* fondo blanco */
+  border: 1px solid #cfd8dc; /* borde suave */
+  border-radius: 12px; /* esquinas redondeadas */
+  padding: 1.2rem 1.5rem; /* espacio interno */
+  margin-bottom: 1rem; /* separación entre tarjetas */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* sombra ligera */
+  transition: all 0.2s ease-in-out;
+}
+
+.anuncio-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Título del anuncio */
+.anuncio-card h3 {
+  color: #485f73; /* tono azul oscuro de tu paleta */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Texto */
+.anuncio-card p {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Botón eliminar con la misma paleta */
+.btn-eliminar {
+  background-color: #498c86; /* verde azulado */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-eliminar:hover {
+  background-color: #3a7d77;
+  transform: scale(1.03);
+}
+.anuncio-card {
+  background-color: #ffffff; /* fondo blanco */
+  border: 1px solid #cfd8dc; /* borde suave */
+  border-radius: 12px; /* esquinas redondeadas */
+  padding: 1.2rem 1.5rem; /* espacio interno */
+  margin-bottom: 1rem; /* separación entre tarjetas */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* sombra ligera */
+  transition: all 0.2s ease-in-out;
+}
+
+.anuncio-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Título del anuncio */
+.anuncio-card h3 {
+  color: #485f73; /* tono azul oscuro de tu paleta */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Texto */
+.anuncio-card p {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Botón eliminar con la misma paleta */
+.btn-eliminar {
+  background-color: #498c86; /* verde azulado */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-eliminar:hover {
+  background-color: #3a7d77;
+  transform: scale(1.03);
+}
+ 

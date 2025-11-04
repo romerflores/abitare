@@ -1,0 +1,27 @@
+.panel-residentes {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0;
+  gap: 20px;
+}
+.panel-residentes > h1 {
+  text-align: center;
+  font-size: 2em;
+}
+.panel-residentes-dpto {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--color-verde);
+}
+.panel-residentes-dpto > h3 {
+  color: #fff;
+}
+.panel-residentes-residentes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

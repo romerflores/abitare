@@ -1,0 +1,65 @@
+.s_admin-registrar-usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  width: 65%;
+  margin: 0 auto;
+  background-color: #ddddddaa;
+  border-radius: 15px;
+}
+.s_admin-registrar-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  gap: 30px;
+}
+.s_admin-registrar-campos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+.s_form-input {
+  width: 100% !important;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+#s_admin-actualizar-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--color-verde);
+  color: #fff;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+.s_form-label {
+  font-size: 15px;
+  top: -15px;
+  left: 5px;
+}
+#s_admin-actualizar-btn:hover {
+  background-color: var(--color-verde);
+  color: #fff;
+}
+
+@media screen and (width<=1000px) {
+  .s_admin-registrar-usuario {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .s_admin-registrar-form {
+    width: 300px;
+  }
+  .s_admin-registrar-campos {
+    width: auto;
+  }
+}

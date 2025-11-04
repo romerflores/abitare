@@ -1,0 +1,153 @@
+.s_tickets {
+  display: flex;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: 20px 0;
+}
+.s_tickets-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 20px;
+  gap: 10px;
+}
+.tickets-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tickets-header-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: var(--bg-color-main);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.tickets-tickets{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 0 0;
+  gap: 20px;
+}
+.tickets-tickets-options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 15px;
+}
+.tickets-options-search {
+  flex: 2;
+}
+.tickets-options-order {
+  display: flex;
+  gap: 10px;
+}
+.search-input {
+  background-color: #eee;
+  padding: 10px 20px !important;
+  transition: background-color 0.1s ease-in-out;
+}
+.search-input:focus {
+  background-color: #fff;
+}
+.select-search {
+  background-color: #eee;
+  transition: background-color 0.1s ease-in-out;
+}
+.select-search:focus {
+  background-color: #fff;
+}
+
+/* Tablas de tickets */
+.tabla-container{
+  overflow: auto;
+}
+.tickets-tickets-info{
+  border-collapse: collapse;
+  width: 100%;
+}
+.tickets-info-header>tr>th{
+  border-bottom: 2px solid var(--color-border);
+  text-align: left;
+  padding: 20px;
+}
+.tickets-header-head{
+  color: #aaa;
+}
+.tickets-info-body>tr>td{
+  border-bottom: 2px solid var(--color-border);
+  padding: 20px;
+}
+.tickets-body-id{
+  font-weight: bold;
+  color: var(--bg-color-main);
+  cursor: pointer;
+}
+.tickets-body-field{
+  display: block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-transform: lowercase;
+  width: fit-content;
+  text-align: center;
+}
+
+.estado-rojo {
+  color: #c91d12;
+  background-color: #ed524955;
+  border: 1px solid #c91d12;
+}
+.estado-verde {
+  background-color: #0f05;
+  color: green;
+  border: 1px solid green;
+}
+.estado-naranja {
+  color: #ffa600;
+  background-color: #ffc65c55;
+  border: 1px solid #ffa600;
+}
+.estado-pendiente {
+  color: #000;
+  background-color: #ddda;
+  border: 1px solid #000;
+}
+
+
+@media screen and (width<=900px) {
+    .s_tickets-container{
+        width: 95%;
+    }
+    .tickets-tickets-info{
+  width: 100%;
+  overflow-x: scroll;
+}
+}
+
+@media screen and (width<=400px) {
+  .s_tickets-container {
+    width: 95%;
+  }
+  .tickets-header{
+    gap: 15px;
+  }
+  .tickets-header-btn {
+    width: 100%;
+    order: -1;
+    justify-content: center;
+  }
+  .tickets-tickets-info{
+  width: 100%;
+  overflow-x: scroll;
+}
+}

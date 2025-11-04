@@ -1,0 +1,101 @@
+.s_admin-incidentes {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+.admin-incidentes-title {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2em;
+}
+.admin-incidentes-cards {
+  width: 90%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.admin-cards-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 25px 20px;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #aaa;
+}
+.admin-card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.admin-card-header>i{
+    font-size: 30px;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: #ddd;
+}
+.admin-card-opt {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.admin-opt-btn {
+  background-color: var(--bg-color-main);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  opacity: .6;
+  transition: opacity .1s ease-in-out;
+}
+.admin-opt-btn:hover{
+  opacity: 1;
+}
+.admin-info-span{
+  font-weight: 400;
+}
+
+.admin-card-state{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.admin-card-state>span{
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+    user-select: none;
+}
+
+
+@media screen and (width<=580px) {
+  .admin-incidentes-title{
+    padding: 100px 50px;
+  }
+  .admin-incidentes-cards {
+    width: 100%;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .admin-card-header{
+    flex-direction: column;
+  }
+  .admin-card-header>i{
+    order: -1;
+  }
+  .admin-card-opt{
+    gap: 5px;
+    flex-direction: column;
+  }
+  .admin-card-state{
+    justify-content: center;
+  }
+}

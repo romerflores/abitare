@@ -1,0 +1,27 @@
+.cambiar-clave-screen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+}
+.cambiar-clave-titulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    gap: 5px;
+}
+.cambiar-clave-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

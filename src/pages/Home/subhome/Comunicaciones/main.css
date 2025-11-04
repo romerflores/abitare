@@ -1,0 +1,20 @@
+.main-chat-admin{
+    width: 100%;
+    padding: 1em;
+}
+.admin-comunicacion-nav{
+    padding: 1em;
+}
+.admin-comunicacion-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+.admin-comunicacion-list>li>a{
+    text-decoration: none;
+    color: #000;
+    padding: 7px 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+}

@@ -1,0 +1,9 @@
+.btn-opcion-modal{
+    padding: 10px;
+}
+.p-dialog>div{
+    padding: 10px 20px;
+}
+.p-dialog-footer>div>button{
+    padding: 10px 15px;
+}

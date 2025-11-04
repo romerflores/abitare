@@ -1,0 +1,136 @@
+:root {
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
+
+  /* Palette Colors */
+  --color-verde: #498C86;
+  --color-plomo-1: #485f73;
+  --color-plomo-2: #788DA2;
+  --color-plomo-3: #e8f2f0;
+  ;
+  --color-ogre-1: #90A680;
+  --color-ogre-2: #AAC2A8;
+  --color-blanco-1: #effded;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87); */
+  background-color: var(--color-plomo-3);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+    --bg-color-main: #07f;
+    --bg-color-main-op: #07fa;
+    --color-border:#ddd;
+    --color-letter-light:#fff;
+    --bg-icons-light: #ddda;
+    
+    /* Color de estados */
+    --color-urgente: #c91d12;
+    --bg-urgente: #ed524955;
+
+    --color-bajo: green;
+    --bg-bajo: #0f05;
+
+    --color-medio: #ffa600;
+    --bg-medio: #ffc65c55;
+
+    --color-pendiente: #000;
+    --bg-pendiente: #ddda;
+
+
+  /* Status colors */
+
+  --color-danger:rgb(255, 208, 208);
+  --color-danger-hover:rgb(196, 37, 37);
+  --color-okay:rgb(28, 117, 28);
+
+
+  font-family:  ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.danger {
+  background-color: var(--color-danger);
+  color: rgb(242, 4, 4);
+
+
+}
+
+.danger:hover {
+  background-color: var(--color-danger-hover);
+  color: var(--color-blanco-1);
+
+}
+
+
+.okay {
+  color: var(--color-blanco-1);
+  background: #498C86;
+  background: linear-gradient(90deg, rgba(73, 140, 134, 1) 0%, rgba(144, 166, 128, 1) 100%);
+
+  transition: linear 2s;
+
+}
+
+.okay:hover {
+  background: #498C86;
+  background: linear-gradient(90deg, rgba(144, 166, 128, 1) 0%, rgba(73, 140, 134, 1) 100%);
+
+
+}
+
+.warning
+{
+  background-color: var(--color-plomo-3);
+  transition: linear 1s;
+}
+
+.warning:hover
+{
+  background-color: #AAC2A8;
+  transition: linear 0.3s;
+}
+
+.shadow {
+  border: 1px solid var(--color-plomo-3);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.urgente{
+    color: var(--color-urgente);
+    background-color: var(--bg-urgente);
+    border: 1px solid var(--color-urgente);
+}
+.medio{
+    color: var(--color-medio);
+    background-color: var(--bg-medio);
+    border: 1px solid var(--color-medio);
+}
+.bajo{
+    color: var(--color-bajo);
+    background-color: var(--bg-bajo);
+    border: 1px solid var(--color-bajo);
+}
+.pendiente{
+    color: var(--color-pendiente);
+    background-color: var(--bg-pendiente);
+    border: 1px solid var(--color-pendiente)
+}
+.asignado{
+    color: #05f;
+    background-color: #fff;
+    border: 1px solid #05f;
+}

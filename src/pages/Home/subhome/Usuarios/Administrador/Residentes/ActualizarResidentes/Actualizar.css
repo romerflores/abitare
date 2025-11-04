@@ -1,0 +1,50 @@
+.s_admin-actualizar-usuario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.s_admin-actualizar-form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.s_admin-actualizar-campos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.s_form-input {
+  width: 100% !important;
+  padding: 10px;
+}
+#s_admin-actualizar-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--color-verde);
+  color: #fff;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+.s_form-label {
+  top: -15px;
+}
+#s_admin-actualizar-btn:hover {
+  background-color: var(--color-verde);
+  color: #fff;
+}
+@media screen and (width<=500px) {
+  .s_admin-actualizar-campos {
+    width: auto;
+    gap: 20px;
+  }
+}

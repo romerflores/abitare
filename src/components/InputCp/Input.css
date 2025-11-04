@@ -1,0 +1,41 @@
+.c_input {
+    height: 40px;
+    width: 100%;
+
+    cursor: text;
+    font-size: 15px;
+
+    border: 2px solid var(--color-plomo-3);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+
+
+.c_input-label
+{
+    color: var(--color-plomo-1);
+    font-size: 15px;
+    width: 300px;
+    padding: 10px;
+
+    /* font-family: 'Courier New', Courier, monospace; */
+
+    overflow-wrap: break-word ;
+    
+    text-align: start;
+
+}
+
+.c_input-container
+{
+    display: flex;
+}
+
+.pwd-input{
+    display: flex;
+}
+.pwd-input > button{
+    right: 0;
+    font-size: 1.3em;
+}

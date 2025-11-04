@@ -1,0 +1,20 @@
+.form-campo-input{
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;  
+}
+.form-campo-input>label{
+    font-weight: bold;
+}
+.campo-input{
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+}
+.campo-input:focus{
+    outline: 2px solid var(--bg-color-main);
+}
+.campo-input::placeholder{
+    font-style: italic;
+}

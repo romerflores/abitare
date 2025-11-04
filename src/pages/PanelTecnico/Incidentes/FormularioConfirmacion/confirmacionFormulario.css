@@ -1,0 +1,40 @@
+.formulario-tecnico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-confirmar-tecnico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    max-width: 600px;
+    padding: 20px;
+    gap: 10px;
+}
+.formulario-tecnico-campo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.formulario-tecnico-campo>textarea{
+    padding: 10px 10px 40px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    resize: none;
+}
+.formulario-tecnico-btn{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #07f;
+    color: #fff;
+}

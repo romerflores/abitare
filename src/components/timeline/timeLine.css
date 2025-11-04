@@ -1,0 +1,10 @@
+.p-timeline-event{
+    display: flex;
+    gap: 10px;
+}
+.p-timeline-event-opposite{
+    font-weight: 500;
+}
+.p-timeline-event-marker{
+    border: 1px solid #07f;
+}

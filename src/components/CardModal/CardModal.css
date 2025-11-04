@@ -1,0 +1,27 @@
+.c_cardModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; /* en lugar de 120% */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* mejor centrado vertical */
+    z-index: 999; /* para asegurarte que quede arriba */
+}
+
+.c_cardModal-Container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 90vw;     /* para que no desborde horizontalmente */
+    max-height: 80vh;    /* limite de altura */
+    overflow-y: auto;    /* scroll vertical si se pasa */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
