@@ -24,7 +24,7 @@ function Dashboard() {
     useEffect(() => {
         const obtenerRegistros = async () => {
             try {
-                const conexion = await fetch('http://localhost:10000/api/consumo/registros-diarios', {
+                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/consumo/registros-diarios', {
                     method: 'GET',
                     credentials: 'include'
                 });
@@ -41,7 +41,7 @@ function Dashboard() {
     useEffect(() => {
         const obtenerDepartamentos = async () => {
             try {
-                const conexion = await fetch('http://localhost:10000/api/administrador/obtener-departamentos');
+                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-departamentos');
                 const respuesta = await conexion.json();
                 if (!conexion.ok) throw new Error(respuesta.message);
                 setDepartamentos(respuesta.departamentos);

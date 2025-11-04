@@ -11,7 +11,7 @@ const PantallaIncidentes = () => {
     useEffect(() => {
         const obtenerIncidentes = async () => {
             try {
-                const conexion = await fetch('http://localhost:10000/api/administrador/obtener-incidentes');
+                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-incidentes');
                 if (conexion.status == 404) return;
                 const respuesta = await conexion.json();
                 setIncidentes(respuesta.incidentes);

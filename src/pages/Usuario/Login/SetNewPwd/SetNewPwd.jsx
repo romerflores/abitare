@@ -21,7 +21,7 @@ const SetNewPwd = () => {
                 clave: pwd
             }
             console.log(data);
-            const conexion = await fetch('http://localhost:10000/api/usuario/actualizar-primera-vez', {
+            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/usuario/actualizar-primera-vez', {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json'

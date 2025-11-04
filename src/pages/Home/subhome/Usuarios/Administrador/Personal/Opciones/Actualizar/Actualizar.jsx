@@ -20,7 +20,7 @@ const Actualizar = ({ id_personal, set_page}) => {
     useEffect(() => {
         const obtenerDatosPersonal = async () => {
             try {
-                const conexion = await fetch(`http://localhost:10000/api/administrador/obtener-personal/:${id}`, {
+                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-personal/:${id}`, {
                     method: 'GET',
                     credentials: 'include'
                 });
@@ -59,7 +59,7 @@ const Actualizar = ({ id_personal, set_page}) => {
             salida
         }
         try {
-            const conexion = await fetch('http://localhost:10000/api/administrador/actualizar-personal', {
+            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/actualizar-personal', {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json'

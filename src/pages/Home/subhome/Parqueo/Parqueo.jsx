@@ -23,7 +23,7 @@ export function Parqueo() {
     useEffect(() => {
         const obtenerUsuarios = async () => {
             try {
-                const res = await fetch("http://localhost:10000/api/estacionamiento", {
+                const res = await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/estacionamiento", {
                     method: "GET",
                     credentials: "include", // si se usa galletitas :v
                 });
@@ -79,7 +79,7 @@ export function Parqueo() {
         element.preventDefault()
 
         try {
-            const respuesta= await fetch("http://localhost:10000/api/estacionamiento/registrar-entrada",
+            const respuesta= await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/estacionamiento/registrar-entrada",
                 {
                     method:"POST",
                     headers:{
@@ -120,7 +120,7 @@ export function Parqueo() {
     const handleSubmitSalida = async (element) => {
         element.preventDefault()
         try {
-            const respuesta = await fetch("http://localhost:10000/api/estacionamiento/registrar-salida",
+            const respuesta = await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/estacionamiento/registrar-salida",
                 {
                     method: "PUT",
                     headers: {

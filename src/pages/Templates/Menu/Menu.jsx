@@ -13,7 +13,7 @@ export default function Menu({p_pageSelected="home", p_setPageSelected=()=>{}})
     const navegador=useNavigate();
 
     const handleLogOut = async () => {
-        const response = await fetch('http://localhost:10000/api/usuario/logout', {
+        const response = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/usuario/logout', {
             method: "DELETE",
             credentials: "include", // si se usa galletitas :v
         });

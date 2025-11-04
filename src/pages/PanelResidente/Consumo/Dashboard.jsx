@@ -24,7 +24,7 @@ function Dashboard({ id }) {
     useEffect(() => {
         const obtenerRegistros = async () => {
             try {
-                const conexion = await fetch(`http://localhost:10000/api/consumo/registros-diarios/:${id}`, {
+                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/consumo/registros-diarios/:${id}`, {
                     method: 'GET',
                     credentials: 'include'
                 });

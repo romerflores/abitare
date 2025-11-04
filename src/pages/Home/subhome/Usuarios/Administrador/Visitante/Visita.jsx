@@ -12,7 +12,7 @@ const Visita = ({set_page}) => {
     useEffect(() => {
         const obtenerDepartamentos = async () => {
             try {
-                const conexion = await fetch('http://localhost:10000/api/administrador/obtener-departamentos', {
+                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-departamentos', {
                     method: 'GET',
                     credentials: 'include'
                 });
@@ -47,7 +47,7 @@ const Visita = ({set_page}) => {
             asunto
         }
         try {
-            const conexion = await fetch('http://localhost:10000/api/administrador/registrar-visita', {
+            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/registrar-visita', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

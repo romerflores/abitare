@@ -16,7 +16,7 @@ const IncidentesPersonal = () => {
     useEffect(() => {
         const obtenerIncidentes = async () => {
             try {
-                const conexion = await fetch(`http://localhost:10000/api/tecnico/obtener-registros/${idTecnico}`, {
+                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/tecnico/obtener-registros/${idTecnico}`, {
                     method: 'GET',
                     credentials: 'include'
                 });

@@ -17,7 +17,7 @@ export default function Modal({ accion, accion_desc, contenido, usuario, color, 
         handleRealizar(true);
         if (visible && realizar)
             try {
-                const conexion = await fetch(`http://localhost:10000/api/administrador/eliminar-${tipo}/:${usuario}`, {
+                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/eliminar-${tipo}/:${usuario}`, {
                     method: 'DELETE',
                     credentials: 'include'
                 });

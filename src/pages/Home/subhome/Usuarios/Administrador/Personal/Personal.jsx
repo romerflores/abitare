@@ -14,7 +14,7 @@ const Personal = () => {
     useEffect(() => {
         const obtenerPersonal = async () => {
             try {
-                const conexion = await fetch('http://localhost:10000/api/administrador/obtener-personal', {
+                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-personal', {
                     method: 'GET',
                     credentials: 'include'
                 })

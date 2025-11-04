@@ -35,7 +35,7 @@ export function LoginForm() {
                 alert('Debe seleccionar el tipo de usuario')
                 return;
             }
-            const response = await fetch("http://localhost:10000/api/usuario/login",
+            const response = await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/usuario/login",
                 {
                     method: "POST",
                     headers: {
@@ -111,7 +111,7 @@ export function LoginForm() {
             tipo: userType[0].toLowerCase()
         }
         try {
-            const conexion = await fetch('http://localhost:10000/api/usuario/cambio-clave', {
+            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/usuario/cambio-clave', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

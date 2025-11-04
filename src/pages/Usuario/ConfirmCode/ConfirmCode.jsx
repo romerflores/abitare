@@ -16,7 +16,7 @@ const ConfirmCode = () => {
             codigo,
             tipo: localStorage.getItem("tipo")
         }
-        const response = await fetch('http://localhost:10000/api/usuario/verificar', {
+        const response = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/usuario/verificar', {
             method: 'POST',
             headers: {
                 "Content-type": 'application/json'

@@ -11,7 +11,7 @@ const RegistroIncidente = () => {
   useEffect(() => {
     const obtenerNiveles = async () => {
       try {
-        const conexion = await fetch('http://localhost:10000/api/incidente/niveles');
+        const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/incidente/niveles');
         const datos = await conexion.json();
         datos.niveles.forEach(e => {
           setNiveles(nivel => [...nivel, e.nombre]);
@@ -28,7 +28,7 @@ const RegistroIncidente = () => {
   useEffect(() => {
     const obtenerTipos = async () => {
       try {
-        const conexion = await fetch('http://localhost:10000/api/mantenimiento');
+        const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/mantenimiento');
         const datos = await conexion.json();
         datos.activos.forEach(e => {
           setTiposIncidentes(tipo => [...tipo, e.tipo])
@@ -67,7 +67,7 @@ const RegistroIncidente = () => {
     formData.append('ubicacion', ubicacion);
     formData.append('tipo_incidente', tipo);
     try {
-      const conexion = await fetch('http://localhost:10000/api/incidente/registrar-incidente', {
+      const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/incidente/registrar-incidente', {
         method: 'POST',
         body: formData
       });

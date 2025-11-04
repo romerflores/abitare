@@ -6,7 +6,7 @@ function RegistroConsumo({ id }) {
     useEffect(() => {
         const obtenerServicios = async () => {
             try {
-                const conexion = await fetch('http://localhost:10000/api/consumo/servicios');
+                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/consumo/servicios');
                 const respuesta = await conexion.json();
                 if (!conexion.ok) throw new Error(respuesta.message);
                 setServicios(respuesta.servicio);
@@ -63,7 +63,7 @@ function RegistroConsumo({ id }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const conexion = await fetch('http://localhost:10000/api/consumo/registrar-consumo', {
+            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/consumo/registrar-consumo', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

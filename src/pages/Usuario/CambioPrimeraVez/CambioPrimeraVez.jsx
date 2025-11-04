@@ -17,7 +17,7 @@ export default function CambioPrimeraVez()
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await fetch("http://localhost:10000/api/usuario/actualizar-primera-vez", {
+            const response = await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/usuario/actualizar-primera-vez", {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({

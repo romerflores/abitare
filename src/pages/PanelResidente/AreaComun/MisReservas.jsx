@@ -19,7 +19,7 @@ export default function MisReservas() {
         const obtenerReservas = async () => {
             try {
                 const id_usuario = localStorage.getItem("id"); // o de donde lo obtengas
-                const url = `http://localhost:10000/api/area-comun/residente/reservas/:${id_usuario}`;
+                const url = `https://lc82mg08-10000.brs.devtunnels.ms/api/area-comun/residente/reservas/:${id_usuario}`;
                 // console.log(url)
                 const response = await fetch(url, {
                     method: "GET",
@@ -67,7 +67,7 @@ export default function MisReservas() {
         }
         try {
 
-            const res = await fetch(`http://localhost:10000/api/area-comun/residente/eliminar-reserva/:${idReserva}`, {
+            const res = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/area-comun/residente/eliminar-reserva/:${idReserva}`, {
                 method: "DELETE",
                 credentials: "include",
             });
@@ -122,7 +122,7 @@ export default function MisReservas() {
         if (idReserva === -1) return;
 
         try {
-            const res = await fetch(`http://localhost:10000/api/area-comun/residente/editar-reserva`, {
+            const res = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/area-comun/residente/editar-reserva`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
@@ -254,7 +254,7 @@ export default function MisReservas() {
             {
                 modalFoto && (<CardModal p_close={()=>{setModalFoto(false)}} p_closeText="Cerrar">
                     <Title p_text="Comprobante" p_sz={1.5}/>
-                    <img src={`http://localhost:10000/public${urlComprobante}`} alt="" width={300}/>
+                    <img src={`https://lc82mg08-10000.brs.devtunnels.ms/public${urlComprobante}`} alt="" width={300}/>
                 </CardModal>)
             }
 

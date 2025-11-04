@@ -60,7 +60,7 @@ const VerPersonal = ({ id }) => {
     useEffect(() => {
         const obtenerPersonal = async (id_param) => {
             try {
-                const conexion = await fetch(`http://localhost:10000/api/administrador/obtener-personal/:${id_param}`, {
+                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-personal/:${id_param}`, {
                     method: 'GET',
                     credentials: 'include'
                 });

@@ -20,7 +20,7 @@ const ActualizarResidente = ({ id_usuario, set_page}) => {
     useEffect(() => {
         const obtenerDatosUsuario = async () => {
             try {
-                const conexion = await fetch(`http://localhost:10000/api/administrador/obtener-residente/:${id}`, {
+                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-residente/:${id}`, {
                     method: 'GET',
                     credentials:'include'
                 });
@@ -55,7 +55,7 @@ const ActualizarResidente = ({ id_usuario, set_page}) => {
             usuario:id
         }
         try {
-            const conexion = await fetch('http://localhost:10000/api/administrador/actualizar-usuario', {
+            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/actualizar-usuario', {
                 method: 'PUT',
                 headers: {
                     'Content-type':'application/json'

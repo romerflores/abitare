@@ -14,7 +14,7 @@ const Residentes = () => {
 
     useEffect(() => {
         const obtenerDatosResidentes = async () => {
-            const conexion = await fetch('http://localhost:10000/api/administrador/obtener-residentes', {
+            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-residentes', {
                 method: 'GET',
                 credentials: 'include'
             });

@@ -18,7 +18,7 @@ const ConfirmacionFormulario = ({ ticket, tecnico }) => {
             extra
         }
         try {
-            const conexion = await fetch('http://localhost:10000/api/tecnico/registrar-informe', {
+            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/tecnico/registrar-informe', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'
