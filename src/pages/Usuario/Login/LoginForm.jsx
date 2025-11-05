@@ -89,6 +89,7 @@ export function LoginForm() {
             // } else {
             //     window.location.href = 'verificar';
             // }
+            window.location.href="/dashboard";
         }
         catch (error) {
             alert(error.message);
