@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://lc82mg08-10000.brs.devtunnels.ms/api", // tu backend
+  baseURL: "https://abitare-back-production.up.railway.app/api", // tu backend
 });
 
 export default api;

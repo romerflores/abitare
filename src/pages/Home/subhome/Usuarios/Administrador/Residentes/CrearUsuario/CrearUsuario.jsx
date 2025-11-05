@@ -11,7 +11,7 @@ const CrearUsuario = ({set_page}) => {
     useEffect(() => {
         const obtenerDepartamentos = async () => {
             try {
-                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-departamentos', {
+                const conexion = await fetch('https://abitare-back-production.up.railway.app/api/administrador/obtener-departamentos', {
                     method: 'GET',
                     credentials: 'include'
                 });
@@ -53,7 +53,7 @@ const CrearUsuario = ({set_page}) => {
         }
         console.log(datos);
         try {
-            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/registrar-usuario', {
+            const conexion = await fetch('https://abitare-back-production.up.railway.app/api/administrador/registrar-usuario', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

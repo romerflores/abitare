@@ -12,7 +12,7 @@ const TicketPage = () => {
     useEffect(() => {
         const obtenerInfoIncidente = async () => {
             try {
-                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/incidente/informacion-incidente/${idPage}`);
+                const conexion = await fetch(`https://abitare-back-production.up.railway.app/api/incidente/informacion-incidente/${idPage}`);
                 const incidente = await conexion.json();
                 setInfo(incidente.incidente)
             } catch (e) {
@@ -27,7 +27,7 @@ const TicketPage = () => {
     useEffect(() => {
         const obtenerImagenes = async () => {
             try {
-                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/incidente/imagenes-ticket/:${idPage}`, {
+                const conexion = await fetch(`https://abitare-back-production.up.railway.app/api/incidente/imagenes-ticket/:${idPage}`, {
                     method: 'GET',
                     credentials: 'include'
                 });
@@ -55,7 +55,7 @@ const TicketPage = () => {
         }
         if (check) {
             try {
-                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/residente/validar-trabajo', {
+                const conexion = await fetch('https://abitare-back-production.up.railway.app/api/residente/validar-trabajo', {
                     method: 'PUT',
                     headers: {
                         'Content-type': 'application/json'
@@ -115,10 +115,10 @@ const TicketPage = () => {
                                             <div className="ticket-info-image">
                                                 {imagen.tipo_mime == "video/mp4"
                                                     ?
-                                                    <video src={`https://lc82mg08-10000.brs.devtunnels.ms/public/images/${imagen.nombre_archivo}`} controls>
+                                                    <video src={`https://abitare-back-production.up.railway.app/public/images/${imagen.nombre_archivo}`} controls>
                                                     </video>
                                                     :
-                                                    <img src={`https://lc82mg08-10000.brs.devtunnels.ms/public/images/${imagen.nombre_archivo}`} alt="Foto 1" />}
+                                                    <img src={`https://abitare-back-production.up.railway.app/public/images/${imagen.nombre_archivo}`} alt="Foto 1" />}
                                             </div>
                                         ))
                                     }

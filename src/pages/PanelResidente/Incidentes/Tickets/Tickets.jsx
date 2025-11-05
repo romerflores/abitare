@@ -18,7 +18,7 @@ const Tickets = () => {
         const obtenerRegistros = async () => {
             const id = localStorage.getItem('id');
             try {
-                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/incidente/incidentes-registrados/:${id}`);
+                const conexion = await fetch(`https://abitare-back-production.up.railway.app/api/incidente/incidentes-registrados/:${id}`);
                 const respuesta = await conexion.json();
                 setFilas(respuesta.incidentes);
                 /* setFilas(null); */

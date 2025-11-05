@@ -13,7 +13,7 @@ const IncidenteInfoAdmin = () => {
     useEffect(() => {
         const obtenerIncidente = async () => {
             try {
-                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-incidente/:${idIncidente}`);
+                const conexion = await fetch(`https://abitare-back-production.up.railway.app/api/administrador/obtener-incidente/:${idIncidente}`);
                 if (!conexion.ok) {
                     alert('No hay informacion sobre este incidente')
                     return;
@@ -31,7 +31,7 @@ const IncidenteInfoAdmin = () => {
         if (infoIncidente && infoIncidente.estado_out == 'PENDIENTE') {
             const obtenerPersonal = async () => {
                 try {
-                    const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/personal-por-tipo/:${infoIncidente.mantenimiento_out}`);
+                    const conexion = await fetch(`https://abitare-back-production.up.railway.app/api/administrador/personal-por-tipo/:${infoIncidente.mantenimiento_out}`);
                     const respuesta = await conexion.json();
                     setPersonal(respuesta.personal)
                 } catch (e) {
@@ -47,7 +47,7 @@ const IncidenteInfoAdmin = () => {
     useEffect(() => {
         const obtenerImagenes = async () => {
             try {
-                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/incidente/imagenes-ticket/:${idIncidente}`, {
+                const conexion = await fetch(`https://abitare-back-production.up.railway.app/api/incidente/imagenes-ticket/:${idIncidente}`, {
                     method: 'GET',
                     credentials: 'include'
                 });
@@ -68,7 +68,7 @@ const IncidenteInfoAdmin = () => {
             usuario: infoIncidente.correo_residente_out
         }
         try {
-            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/asignar-personal-incidente', {
+            const conexion = await fetch('https://abitare-back-production.up.railway.app/api/administrador/asignar-personal-incidente', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'
@@ -139,10 +139,10 @@ const IncidenteInfoAdmin = () => {
                                 <div>
                                     {imagen.tipo_mime == "video/mp4"
                                         ?
-                                        <video src={`https://lc82mg08-10000.brs.devtunnels.ms/public/images/${imagen.nombre_archivo}`} controls>
+                                        <video src={`https://abitare-back-production.up.railway.app/public/images/${imagen.nombre_archivo}`} controls>
                                         </video>
                                         :
-                                        <img src={`https://lc82mg08-10000.brs.devtunnels.ms/public/images/${imagen.nombre_archivo}`} alt="Foto 1" />}
+                                        <img src={`https://abitare-back-production.up.railway.app/public/images/${imagen.nombre_archivo}`} alt="Foto 1" />}
                                 </div>
                             ))}
                         </div>

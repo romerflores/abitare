@@ -21,7 +21,7 @@ export default function PagarQR({ p_close = () => { }, p_idReserva }) {
             formData.append("id_reserva", p_idReserva);
             formData.append("fotografia", file);
 
-            const res = await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/area-comun/residente/pagar", {
+            const res = await fetch("https://abitare-back-production.up.railway.app/api/area-comun/residente/pagar", {
                 method: "PUT",
                 credentials: "include", // mantiene cookies / sesión
                 body: formData, // multer lo interpreta como multipart/form-data

@@ -28,7 +28,7 @@ export default function NavBarHeader({ opciones, set_page}) {
 
     const cerrarSesion = async () => {
         try {
-            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/usuario/logout', {
+            const conexion = await fetch('https://abitare-back-production.up.railway.app/api/usuario/logout', {
                 method: 'DELETE',
                 credentials:'include'
             });

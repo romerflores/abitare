@@ -12,7 +12,7 @@ const RegistrarPersonal = ({set_page}) => {
     useEffect(() => {
         const obtenerMantenimientos = async () => {
             try {
-                const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/mantenimiento/', {
+                const conexion = await fetch('https://abitare-back-production.up.railway.app/api/mantenimiento/', {
                     method: 'GET',
                     credentials: 'include'
                 })
@@ -57,7 +57,7 @@ const RegistrarPersonal = ({set_page}) => {
             salida
         }
         try {
-            const conexion = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/registrar-personal', {
+            const conexion = await fetch('https://abitare-back-production.up.railway.app/api/administrador/registrar-personal', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

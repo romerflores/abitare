@@ -55,7 +55,7 @@ export default function Reservar() {
 
 
         try {
-            const response = await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/area-comun/residente/reservar", {
+            const response = await fetch("https://abitare-back-production.up.railway.app/api/area-comun/residente/reservar", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -89,7 +89,7 @@ export default function Reservar() {
     }
 
     useEffect(() => {
-        fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/area-comun").then((res) => res.json()).then((data) => {
+        fetch("https://abitare-back-production.up.railway.app/api/area-comun").then((res) => res.json()).then((data) => {
             setAreasComunesData(data);
         }).catch((error) => {
             console.error("Error: ", error)

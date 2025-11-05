@@ -16,7 +16,7 @@ export default function CambioContrasenia()
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/usuario/actualizar-clave", {
+            const response = await fetch("https://abitare-back-production.up.railway.app/api/usuario/actualizar-clave", {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({

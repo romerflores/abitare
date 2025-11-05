@@ -10,7 +10,7 @@ export default function Calendar() {
 
     useEffect(() => {
         const obtenerReservas = async () => {
-            const res = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/area-comun/residente/reservas/all`,
+            const res = await fetch(`https://abitare-back-production.up.railway.app/api/area-comun/residente/reservas/all`,
                 {
                     method: "GET",
                     credentials: "include",

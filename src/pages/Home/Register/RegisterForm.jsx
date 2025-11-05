@@ -60,7 +60,7 @@ export function RegisterForm() {
         };
 
         try {
-            const res = await fetch("https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/registrar-usuario", {
+            const res = await fetch("https://abitare-back-production.up.railway.app/api/administrador/registrar-usuario", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

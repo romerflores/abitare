@@ -56,7 +56,7 @@ export default function Dashboard() {
   // Función para intentar conectar al backend con fallback
   const fetchBackendData = async () => {
     try {
-      const response = await fetch('https://lc82mg08-10000.brs.devtunnels.ms/api/dashboard', {
+      const response = await fetch('https://abitare-back-production.up.railway.app/api/dashboard', {
         method: 'GET',
         credentials: 'include',
         headers: {

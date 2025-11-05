@@ -7,7 +7,7 @@ const EliminarResidente = () => {
     useEffect(() => {
         const obtenerDatosUsuario = async () => {
             try {
-                const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/obtener-residente/:${id}`);
+                const conexion = await fetch(`https://abitare-back-production.up.railway.app/api/administrador/obtener-residente/:${id}`);
                 const datos = await conexion.json();
                 setResidente(datos.residente);
             } catch (e) {
@@ -19,7 +19,7 @@ const EliminarResidente = () => {
     
     const eliminarDefinitivamente = async () => {
         try {
-            const conexion = await fetch(`https://lc82mg08-10000.brs.devtunnels.ms/api/administrador/eliminar-residente/:${id}`, {
+            const conexion = await fetch(`https://abitare-back-production.up.railway.app/api/administrador/eliminar-residente/:${id}`, {
                 method: 'DELETE',
                 credentials: 'include'
             });
