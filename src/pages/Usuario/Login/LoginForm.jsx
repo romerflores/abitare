@@ -67,11 +67,11 @@ export function LoginForm() {
                 alert(data.message)
                 return;
             };
-            console.log(DataTransfer)
+            // console.log(DataTransfer)
 
-            /* 
+            /*
                         console.log(DataTransfer)
-            
+
                         console.log("SIUUUUUUU",data);
              */
             // Aca viene el token, si lo usaremos
@@ -83,12 +83,12 @@ export function LoginForm() {
             localStorage.setItem("tipo", data.tipo);
             /* window.location.href = "/home"; */
 
-            if (data.change) {
-                alert('Debe cambiar su contraseña');
-                window.location.href = 'cambio-primera-vez';
-            } else {
-                window.location.href = 'verificar';
-            }
+            // if (data.change) {
+            //     alert('Debe cambiar su contraseña');
+            //     window.location.href = 'cambio-primera-vez';
+            // } else {
+            //     window.location.href = 'verificar';
+            // }
         }
         catch (error) {
             alert(error.message);
@@ -105,7 +105,7 @@ export function LoginForm() {
         if (!userValue) {
             alert('Debe escribir su usuario');
             return;
-        } 
+        }
         const data = {
             usuario: userValue,
             tipo: userType[0].toLowerCase()
