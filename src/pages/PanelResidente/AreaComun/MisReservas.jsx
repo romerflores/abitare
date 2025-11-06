@@ -8,7 +8,7 @@ import Button from "../../../components/Button/Button";
 import ColorText from "../../../components/ColorText/ColorText";
 import PagarQR from "./PagarQR";
 
-import ReactDOM from "react-dom";
+
 
 
 
@@ -255,7 +255,7 @@ export default function MisReservas() {
             }
 
             {
-                modalFoto && ReactDOM.createPortal((<CardModal p_close={()=>{setModalFoto(false)}} p_closeText="Cerrar">
+                modalFoto && ((<CardModal p_close={()=>{setModalFoto(false)}} p_closeText="Cerrar">
                     <Title p_text="Comprobante" p_sz={1.5}/>
                     <img src={`https://abitare-back-production.up.railway.app/public${urlComprobante}`} alt="" width={300}/>
                 </CardModal>))
