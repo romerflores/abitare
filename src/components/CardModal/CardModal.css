@@ -1,5 +1,5 @@
 .c_cardModal {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center; /* mejor centrado vertical */
-    z-index: 50; /* para asegurarte que quede arriba */
+    z-index: 5099; /* para asegurarte que quede arriba */
 }
 
 .c_cardModal-Container {
