@@ -1,41 +1,41 @@
 export const svgRoutes=
 {
-    "Parking":"/public/svg/parking-svgrepo-com.svg",
-    "AUTOMOVIL":"/public/svg/car-side-svgrepo-com.svg",
-    "Time":"/public/svg/time-svgrepo-com(1).svg",
-    "Users":"/public/svg/users-svgrepo-com.svg",
-    "Tick":"/public/svg/tick-circle-svgrepo-com.svg",
-    "Location":"/public/svg/location-pin-svgrepo-com.svg",
-    "Bicycle":"/public/svg/bicycle-svgrepo-com.svg",
-    "WheelChair":"/public/svg/wheelchair-user-svgrepo-com.svg",
-    "MOTOCICLETA":"/public/svg/motorbike-svgrepo-com.svg",
-    "HOME":"/public/svg/home-icon-silhouette-svgrepo-com.svg",
-    "DEPARTAMENTO":"/public/svg/building-user-svgrepo-com.svg",
-    "PAGO":"/public/svg/payment-card-svgrepo-com.svg",
-    "SALIR":"/public/svg/logout-svgrepo-com(1).svg",
-    "Calendar":"/public/svg/calendar-days-svgrepo-com.svg",
-    "Money":"/public/svg/money-check-dollar-svgrepo-com.svg",
-    "Add":"/public/svg/add-square-svgrepo-com.svg",
-    "Add2":"/public/svg/add-square-svgrepo-com(1).svg",
-    "Close":"/public/svg/close-square-svgrepo-com.svg",
-    "Edit":"/public/svg/edit-svgrepo-com.svg",
-    "PAGAR":"/public/svg/money-bag-svgrepo-com.svg",
-    "FOTO":"/public/svg/photo-svgrepo-com.svg"
+    "Parking":"/svg/parking-svgrepo-com.svg",
+    "AUTOMOVIL":"/svg/car-side-svgrepo-com.svg",
+    "Time":"/svg/time-svgrepo-com(1).svg",
+    "Users":"/svg/users-svgrepo-com.svg",
+    "Tick":"/svg/tick-circle-svgrepo-com.svg",
+    "Location":"/svg/location-pin-svgrepo-com.svg",
+    "Bicycle":"/svg/bicycle-svgrepo-com.svg",
+    "WheelChair":"/svg/wheelchair-user-svgrepo-com.svg",
+    "MOTOCICLETA":"/svg/motorbike-svgrepo-com.svg",
+    "HOME":"/svg/home-icon-silhouette-svgrepo-com.svg",
+    "DEPARTAMENTO":"/svg/building-user-svgrepo-com.svg",
+    "PAGO":"/svg/payment-card-svgrepo-com.svg",
+    "SALIR":"/svg/logout-svgrepo-com(1).svg",
+    "Calendar":"/svg/calendar-days-svgrepo-com.svg",
+    "Money":"/svg/money-check-dollar-svgrepo-com.svg",
+    "Add":"/svg/add-square-svgrepo-com.svg",
+    "Add2":"/svg/add-square-svgrepo-com(1).svg",
+    "Close":"/svg/close-square-svgrepo-com.svg",
+    "Edit":"/svg/edit-svgrepo-com.svg",
+    "PAGAR":"/svg/money-bag-svgrepo-com.svg",
+    "FOTO":"/svg/photo-svgrepo-com.svg"
 
 }
 
 export const imgRoutes=
 {
-    "LOGO":"/public/img/logoAbitare.jpeg",
-    "PISCINA":"/public/img/piscina.jpg",
-    "SALON":"/public/img/salon.jpg",
-    "GIMNASIO":"/public/img/gimansio.jpg",
+    "LOGO":"/img/logoAbitare.jpeg",
+    "PISCINA":"/img/piscina.jpg",
+    "SALON":"/img/salon.jpg",
+    "GIMNASIO":"/img/gimansio.jpg",
 
-    "Salón de eventos":"/public/img/piscina.jpg",
-    "COMIDAS":"/public/img/patio.jpg",
-    "TALLER":"/public/img/taller.jpeg",
-    "JUEGOS":"/public/img/salajuegos.jpg",
-    "PARRILLA":"/public/img/parrilla.jpeg",
-    "QR":"/public/img/yape.png"
+    "Salón de eventos":"/img/piscina.jpg",
+    "COMIDAS":"/img/patio.jpg",
+    "TALLER":"/img/taller.jpeg",
+    "JUEGOS":"/img/salajuegos.jpg",
+    "PARRILLA":"/img/parrilla.jpeg",
+    "QR":"/img/yape.png"
 
 }
